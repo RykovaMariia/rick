@@ -1,0 +1,39 @@
+/* TODO: change color */
+
+mat-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  color: #fff;
+}
+
+.burger-icon {
+  color: #fff;
+}
+
+.mat-mdc-card {
+  background-color: inherit;
+  border-color: inherit;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+mat-card-subtitle {
+  color: #e5e5e5;
+}
+
+.mat-mdc-card-header {
+  align-items: center;
+  padding: 0;
+}
+
+.mat-mdc-card-avatar {
+  width: 34px;
+  height: 34px;
+  margin: 0;
+}
+
+.avatar {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
