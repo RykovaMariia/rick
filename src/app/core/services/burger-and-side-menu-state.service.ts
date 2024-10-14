@@ -8,9 +8,17 @@ export class BurgerAndSideMenuStateService {
 
   public isBurgerMenu = this.$isBurgerMenu.asReadonly();
 
-  public isSideMenu = computed(() => !this.$isBurgerMenu);
+  private readonly $isOpenBurgerMenu = signal(false);
+
+  // public isOpenBurgerMenu = this.$isOpenBurgerMenu.asReadonly();
+
+  public isSideMenu = computed(() => !this.$isBurgerMenu() || this.$isOpenBurgerMenu());
 
   public setStateBurgerMenu(isBurgerMenu: boolean) {
     this.$isBurgerMenu.set(isBurgerMenu);
+  }
+
+  public toggleOpenBurgerMenu() {
+    this.$isOpenBurgerMenu.update((isOpen) => !isOpen);
   }
 }

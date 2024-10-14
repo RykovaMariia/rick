@@ -6,5 +6,12 @@ export const routes: Routes = [
     path: 'management',
     loadComponent: () =>
       import('@features/management/pages/management/management.component').then((m) => m.ManagementComponent),
+    children: [
+      {
+        path: 'contr-card',
+        loadComponent: () =>
+          import('@features/management/pages/contr-card/contr-card.component').then((m) => m.ContrCardComponent),
+      },
+    ],
   },
 ];

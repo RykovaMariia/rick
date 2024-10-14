@@ -25,8 +25,8 @@ $rick-theme: mat.define-theme(
   @include mat.system-level-colors($rick-theme);
   @include mat.system-level-typography($rick-theme);
 
-  --mat-toolbar-standard-height: 70px;
-  --mat-toolbar-container-background-color: #da2032;
+  --mat-toolbar-standard-height: 4.375rem;
+  --mat-toolbar-container-background-color: var(--sys-primary);
 }
 
 html,
@@ -36,5 +36,4 @@ body {
 
 body {
   margin: 0;
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
 }

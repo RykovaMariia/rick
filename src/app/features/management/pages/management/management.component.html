@@ -1,1 +1,9 @@
-<p>management works!</p>
+<mat-drawer-container class="management-container">
+  <mat-drawer mode="side" [opened]="burgerMenuState.isSideMenu()">
+    <app-side-menu></app-side-menu>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

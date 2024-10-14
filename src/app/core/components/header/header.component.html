@@ -1,6 +1,6 @@
 <mat-toolbar>
   @if (burgerMenuState.isBurgerMenu()) {
-    <button mat-icon-button class="burger-icon">
+    <button mat-icon-button class="burger-icon" (click)="burgerMenuState.toggleOpenBurgerMenu()">
       <mat-icon>menu</mat-icon>
     </button>
   } @else {

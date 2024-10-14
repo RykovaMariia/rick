@@ -10,9 +10,9 @@
   --sys-surface-container: #fff;
   --sys-surface-container-high: #fff;
   --sys-surface-container-highest: #fff;
-  --sys-on-surface: #282828;
+  --sys-on-surface: #fff;
   --sys-surface-variant: #fff;
-  --sys-on-surface-variant: #282828;
+  --sys-on-surface-variant: #fff;
   --sys-inverse-surface: #fff;
   --sys-inverse-on-surface: #282828;
   --sys-outline: #828c9666;
@@ -71,6 +71,6 @@
   --sys-label-medium-size: 0.75rem;
   --sys-label-small-size: 0.688rem;
   --sys-title-large-size: 1rem;
-  --sys-title-medium-size: 0.875rem;
+  --sys-title-medium-size: 1rem;
   --sys-title-small-size: 0.875rem;
 }
